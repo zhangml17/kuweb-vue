@@ -2,8 +2,10 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 // import App from './App'
+import Home from './Home'
 import router from './router'
-import kuweb from './components/web-ui'
+// import Kuweb from './components/web-ui'
+// import ProgressBar from './components/progress-bar'
 
 Vue.config.productionTip = false
 
@@ -11,6 +13,8 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
-  components: { kuweb },
-  template: '<kuweb/>'
+ // components: { App,kuweb },
+  components: { Home },
+ // template: '<kuweb/>',
+  template: '<Home/>'
 })
